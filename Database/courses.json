@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "RS101",
+    "name": "Web Development",
+    "number": "CS5610",
+    "startDate": "2023-09-01",
+    "endDate": "2023-12-10"
+  },
+  {
+    "_id": "RS102",
+    "name": "PDP",
+    "number": "CS5010",
+    "startDate": "2023-09-01",
+    "endDate": "2023-12-10"
+  },
+  {
+    "_id": "RS103",
+    "name": "Deep Learning",
+    "number": "CS7510",
+    "startDate": "2023-09-01",
+    "endDate": "2023-12-10"
+  }
+]
