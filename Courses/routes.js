@@ -21,7 +21,7 @@ function CourseRoutes(app) {
         let courses = [];
 
         for(let course of Database.courses) {
-            if(course._id !== courseId) course.push(course);
+            if(course._id !== courseId) courses.push(course);
         }
 
         Database.courses = courses;
