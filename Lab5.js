@@ -90,9 +90,13 @@ const Lab5 = (app) => {
             res.json(completedTodos);
             return;
         }
-
         res.json(todos);
     });
+
+    app.get("/a5/todos/create", (req, res) => {
+        console.log("Here creating todo")
+        res.send(todos);
+    })
 
     app.post("/a5/todos", (req, res) => {
         const newTodo = {
@@ -108,7 +112,7 @@ const Lab5 = (app) => {
         const { id } = req.params;
         const todo = todos.find((t) => t.id === parseInt(id));
         if (!todo) {
-            res.res.status(404)
+            res.status(404)
                 .json({
                           message: `Unable to delete Todo with ID ${id}`
                 });
