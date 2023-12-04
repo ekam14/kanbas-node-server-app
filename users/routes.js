@@ -57,7 +57,12 @@ function UserRoutes(app) {
     };
 
     const signout = (req, res) => {
-        req.session['currentUser'].destroy();
+        try {
+            req.session['currentUser'].destroy();
+        }catch(err) {
+            console.log(err);
+        }
+
         res.json(200);
     };
 
